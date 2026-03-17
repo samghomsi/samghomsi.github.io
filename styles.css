@@ -1,22 +1,12 @@
-nav {
-  position: sticky;
-  top: 0;
-  background: #0077cc;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+#work li {
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
-nav a {
-  color: #fff;
-  font-weight: bold;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: transform 0.2s, color 0.2s;
-}
-
-nav a:hover {
+#work li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   color: #00e0ff;
-  transform: scale(1.2);
 }
