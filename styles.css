@@ -2,11 +2,12 @@ section {
   padding: 25px;
   border-radius: 12px;
   margin-bottom: 25px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #00b3e6, #0077cc);
+  color: #fff;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
