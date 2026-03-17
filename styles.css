@@ -1,7 +1,8 @@
-section {
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #0077cc;
+  border-radius: 0 0 10px 10px;
 }
