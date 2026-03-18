@@ -79,3 +79,9 @@ body::before {
 section:hover {
   box-shadow: 0 0 25px rgba(0, 200, 255, 0.3);
 }
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
