@@ -75,3 +75,7 @@ body::before {
 body::before {
   animation: confettiMove 25s linear infinite;
 }
+
+section:hover {
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.3);
+}
