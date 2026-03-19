@@ -166,3 +166,18 @@ section {
   transform: scale(1.08);
   box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
 }
+
+#work li {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: auto;
+}
+
+#work li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,200,255,0.2);
+}
