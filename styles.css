@@ -73,7 +73,7 @@ body::before {
 }
 
 body::before {
-  animation: confettiMove 25s linear infinite;
+  animation: confettiMove 5s linear infinite;
 }
 
 section:hover {
