@@ -493,15 +493,6 @@ a:hover ~ .cursor {
   transition: 0.3s;
 }
 
-.video-card:hover video {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.video-card:hover .thumb {
-  opacity: 1;
-}
-
 .thumb {
   width: 100%;
   display: block;
