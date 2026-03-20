@@ -443,3 +443,34 @@ a:hover ~ .cursor {
   transform: translate(-50%, -50%);
   opacity: 0.7;
 }
+
+.video-card {
+  position: relative;
+  width: 300px;
+  list-style: none;
+}
+
+.video-card video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.video-card:hover video {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.video-card:hover .thumb {
+  opacity: 0;
+}
+
+.thumb {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
