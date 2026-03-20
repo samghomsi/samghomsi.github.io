@@ -205,3 +205,13 @@ section {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .work-item {
+    margin-bottom: 20px;
+  }
+}
