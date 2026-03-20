@@ -223,3 +223,23 @@ section {
 section:nth-child(even) {
   background: rgba(255,255,255,0.05);
 }
+
+.side-left, .side-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.8;
+}
+
+.side-left {
+  left: 10px;
+  text-align: left;
+}
+
+.side-right {
+  right: 10px;
+  text-align: right;
+}
