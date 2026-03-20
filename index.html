@@ -163,11 +163,6 @@
   cards.forEach(card => {
     const video = card.querySelector("video");
 
-    // hover play
-    card.addEventListener("mouseenter", () => {
-      video.play();
-    });
-
     card.addEventListener("mouseleave", () => {
       video.pause();
       video.currentTime = 0;
