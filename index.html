@@ -135,41 +135,45 @@
   </section>
 
 <script>
+  // CURSOR (SAFE VERSION)
   const cursor = document.querySelector(".cursor");
-  let hue = 0;
 
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+  if (cursor) {
+    let hue = 0;
 
-    hue += 2;
-    cursor.style.background = `hsl(${hue}, 100%, 60%)`;
-    cursor.style.boxShadow = `0 0 20px hsl(${hue}, 100%, 60%)`;
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+
+      hue += 2;
+      cursor.style.background = `hsl(${hue}, 100%, 60%)`;
+      cursor.style.boxShadow = `0 0 20px hsl(${hue}, 100%, 60%)`;
+    });
+  }
+
+  // VIDEO HOVER + CLICK
+  const cards = document.querySelectorAll(".video-card");
+
+  cards.forEach(card => {
+    const video = card.querySelector("video");
+
+    // hover play
+    card.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    // click with sound
+    card.addEventListener("click", () => {
+      video.muted = false;
+      video.controls = true;
+      video.play();
+    });
   });
-
-  // VIDEO HOVER
-  const card = document.querySelector(".video-card");
-  const video = card.querySelector("video");
-
-  card.addEventListener("mouseenter", () => {
-    video.play();
-  });
-
-  card.addEventListener("mouseleave", () => {
-    video.pause();
-    video.currentTime = 0;
-  });
-  <div id="videoModal" style="display:none;">
-  <video id="fullVideo" controls></video>
-</div>
-   const modal = document.getElementById("videoModal");
-const fullVideo = document.getElementById("fullVideo");
-
-card.addEventListener("click", () => {
-  fullVideo.src = video.src;
-  modal.style.display = "block";
-  fullVideo.play();
-});
 </script>
 </body>
 </html>
