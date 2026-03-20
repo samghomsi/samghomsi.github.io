@@ -312,3 +312,29 @@ p {
     transform: translateY(0);
   }
 }
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px rgba(0,200,255,0.5);
+  transform: translateY(-2px);
+}
+
+.thumb-container img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.thumb-container:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0,200,255,0.3);
+}
+
+section {
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
