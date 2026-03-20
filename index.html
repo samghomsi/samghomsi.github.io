@@ -159,6 +159,17 @@
     video.pause();
     video.currentTime = 0;
   });
+  const modal = document.getElementById("videoModal");
+const fullVideo = document.getElementById("fullVideo");
+
+card.addEventListener("click", () => {
+  fullVideo.src = video.src;
+  modal.style.display = "block";
+  fullVideo.play();
+});
+  <div id="videoModal" style="display:none;">
+  <video id="fullVideo" controls></video>
+</div>
 </script>
 </body>
 </html>
