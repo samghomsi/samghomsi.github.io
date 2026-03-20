@@ -163,11 +163,6 @@
   cards.forEach(card => {
     const video = card.querySelector("video");
 
-    card.addEventListener("mouseleave", () => {
-      video.pause();
-      video.currentTime = 0;
-    });
-
     // click with sound
     card.addEventListener("click", () => {
       video.muted = false;
