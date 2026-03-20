@@ -481,7 +481,7 @@ a:hover ~ .cursor {
   height: 100%;
   object-fit: contain;
   background: black;
-  opacity: 0;
+  opacity: 1;
   transition: 0.3s;
 }
 
