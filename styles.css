@@ -499,7 +499,7 @@ a:hover ~ .cursor {
 }
 
 .video-card:hover .thumb {
-  opacity: 0;
+  opacity: 1;
 }
 
 .thumb {
