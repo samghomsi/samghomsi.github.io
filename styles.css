@@ -215,3 +215,11 @@ section {
     margin-bottom: 20px;
   }
 }
+
+section {
+  margin-bottom: 60px;
+}
+
+section:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
