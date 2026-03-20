@@ -355,3 +355,12 @@ section:hover {
 body {
   cursor: none;
 }
+
+.cursor {
+  transition: transform 0.15s ease;
+}
+
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  transform: scale(1.8);
+}
