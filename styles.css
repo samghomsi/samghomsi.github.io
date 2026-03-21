@@ -489,3 +489,24 @@ background: black;
   aspect-ratio: 9 / 16;
   max-width: 300px;
 }
+
+.video-card {
+  border: 1px solid rgba(0,200,255,0.3);
+}
+
+section {
+  background: rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.video-card video {
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.video-card:hover video {
+  filter: brightness(1.1);
+}
